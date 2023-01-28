@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href='{% static "css/blog.css" %}' rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="sidebar">
+            <h2>MY blog</h2>
+            <p>this is blog</p>
+        </div>
+    </body>
+</html>
